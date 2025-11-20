@@ -9,8 +9,9 @@ def generate_profile(age):
         return "Adult"
 
 user_name = input("Enter your full name: ")
-birth_year = int(input("Enter your birth year: "))
+birth_year_str = input("Enter your birth year: ")
 
+birth_year = int(birth_year_str)
 current_year = datetime.now().year
 current_age = current_year - birth_year
 
